@@ -1,26 +1,47 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function App() {
-  return (
-    <div className="App">
-     <div className="from">
-      <div className="fomr-title">
-        <h1 style={{color: "blue"}}>react popup</h1>
-      </div>
 
-      <div>name</div>
-      <input type="text" name="name"/>
-      <div>email</div>
-      <input type="email" name="name"/>
-      <div>phone</div>
-      <input type="text" name="name"/>
-      <div>city</div>
-      <input type="text" name="name"/>
-      <div>address</div>
-      <input type="text" name="name"/>
-    
-     </div>
-    </div>
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+   <>
+    <Button variant="primary" onClick={handleShow}>
+        click
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>form</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+
+          <div className='title'>name</div>
+          <input type="text"/>
+
+          <div className='title'>last name</div>
+          <input type="text"/>
+
+          <div className='title'>email</div>
+          <input type="text"/>
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+   </>
   );
 }
 
