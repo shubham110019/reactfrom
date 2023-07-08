@@ -5,7 +5,7 @@ function App() {
     <div className="App">
      <div className="from">
       <div className="fomr-title">
-        <h1>react popup</h1>
+        <h1 style={{color: "blue"}}>react popup</h1>
       </div>
 
       <div>name</div>
@@ -14,10 +14,11 @@ function App() {
       <input type="email" name="name"/>
       <div>phone</div>
       <input type="text" name="name"/>
-      <div>phone 2</div>
+      <div>city</div>
       <input type="text" name="name"/>
-      <div>phone 3</div>
+      <div>address</div>
       <input type="text" name="name"/>
+    
      </div>
     </div>
   );
