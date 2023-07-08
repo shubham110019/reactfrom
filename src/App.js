@@ -16,6 +16,8 @@ function App() {
       <input type="text" name="name"/>
       <div>phone 2</div>
       <input type="text" name="name"/>
+      <div>phone 3</div>
+      <input type="text" name="name"/>
      </div>
     </div>
   );
