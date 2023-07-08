@@ -14,6 +14,8 @@ function App() {
       <input type="email" name="name"/>
       <div>phone</div>
       <input type="text" name="name"/>
+      <div>phone 2</div>
+      <input type="text" name="name"/>
      </div>
     </div>
   );
