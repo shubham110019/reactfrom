@@ -5,7 +5,7 @@ function App() {
     <div className="App">
      <div className="from">
       <div className="fomr-title">
-        <h2>react popup</h2>
+        <h1>react popup</h1>
       </div>
 
       <div>name</div>
