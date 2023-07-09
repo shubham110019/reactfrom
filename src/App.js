@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function App() {
@@ -32,8 +31,6 @@ function App() {
           <input type="text"/>
 
         </Modal.Body>
-        <Modal.Footer>
-        </Modal.Footer>
       </Modal>
    </>
   );
