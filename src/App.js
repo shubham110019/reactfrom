@@ -12,9 +12,9 @@ function App() {
   const handleShow = () => setShow(true);
   return (
    <>
-    <Button variant="primary" onClick={handleShow}>
+    <button variant="primary" onClick={handleShow}>
         click
-      </Button>
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -33,12 +33,6 @@ function App() {
 
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
         </Modal.Footer>
       </Modal>
    </>
